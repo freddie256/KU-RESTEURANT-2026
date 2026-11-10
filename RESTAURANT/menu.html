@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | KU Restaurant</title>
+
+    <meta name="description"
+          content="Browse the KU Restaurant menu — meals, drinks and snacks at student-friendly prices. Order ahead and skip the queue.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+
+            <span>
+                <strong>KU</strong> Restaurant
+               
+            </span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <div class="main-nav" id="mainNav">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                About Us
+            </a>
+
+            <a href="gallery.html">
+                <i class="fa-solid fa-images"></i>
+                Gallery
+            </a>
+
+            <div class="nav-dropdown">
+
+                <div class="nav-dropdown-row">
+
+                    <a href="social-events.html" class="nav-dropdown-toggle">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Social Events
+                    </a>
+
+                    <button type="button"
+                            class="dropdown-caret"
+                            aria-label="Toggle Social Events submenu"
+                            aria-expanded="false">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                </div>
+
+                <div class="dropdown-menu">
+
+                    <a href="social-events.html#birthday">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        Birthday
+                    </a>
+
+                    <a href="social-events.html#conference">
+                        <i class="fa-solid fa-users"></i>
+                        Conference
+                    </a>
+
+                    <a href="social-events.html#handover">
+                        <i class="fa-solid fa-handshake"></i>
+                        Handover Party
+                    </a>
+
+                    <a href="social-events.html#graduation">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Graduation
+                    </a>
+
+                    <a href="social-events.html#meeting">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Meeting
+                    </a>
+
+                    <a href="social-events.html#other">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Other Events
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="menu.html" class="active">
+                <i class="fa-solid fa-bowl-food"></i>
+                Menu
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+            <a href="menu.html#order" class="nav-order">
+                Order Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="inner-hero">
+
+    <div class="container">
+
+        <span class="hero-badge">
+            <i class="fa-solid fa-bowl-food"></i>
+            OUR FULL MENU
+        </span>
+
+        <h1>
+            Something delicious
+            <span>for everyone.</span>
+        </h1>
+
+        <p>
+            Fresh meals, refreshing drinks and tasty snacks —
+            all prepared daily and priced for campus life.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section section-padding" id="menu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    OUR MENU
+                </span>
+
+                <h2>
+                    Pick your
+                    <span>favourite.</span>
+                </h2>
+            </div>
+
+            <a href="menu.html#order" class="text-link">
+                Start my order
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="menu-tools">
+            <div class="menu-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="menuSearch" placeholder="Search meals, drinks or snacks..." aria-label="Search menu">
+            </div>
+            <span class="menu-result-count" id="menuResultCount">Menu items</span>
+        </div>
+
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+
+            <button type="button" class="menu-tab active" data-filter="all">
+                All
+            </button>
+
+            <button type="button" class="menu-tab" data-filter="break">
+                <i class="fa-solid fa-mug-hot"></i>
+                Breakfast
+            </button>
+
+            <button type="button" class="menu-tab" data-filter="meals">
+                <i class="fa-solid fa-drumstick-bite"></i>
+                Meals
+            </button>
+
+            <button type="button" class="menu-tab" data-filter="drinks">
+                <i class="fa-solid fa-glass-water"></i>
+                Drinks
+            </button>
+
+            <button type="button" class="menu-tab" data-filter="snacks">
+                <i class="fa-solid fa-cookie-bite"></i>
+                Snacks
+            </button>
+
+        </div>
+
+
+        <div class="food-grid">
+
+            <!-- Food 1 -->
+
+            <article class="food-card" data-category="meals">
+
+                <div class="food-image">
+                    <img src="images/rich-beef.jpg"
+                         alt="Beef and rice">
+
+                    <span class="food-tag">Popular</span>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Beef & Rice</h3>
+
+                        <p>
+                            Tender beef served with
+                            perfectly prepared rice.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 8,000
+                        </strong>
+
+                        <button class="add-food" data-id="beef-rice" data-name="Beef & Rice" data-price="8000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Food 2 -->
+
+            <article class="food-card" data-category="meals">
+
+                <div class="food-image">
+                    <img src="images/pilau.jpg"
+                         alt="Vegetable pilau">
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Vegetable Pilau</h3>
+
+                        <p>
+                            Aromatic pilau prepared with
+                            fresh vegetables and spices.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 8,000
+                        </strong>
+
+                        <button class="add-food" data-id="vegetable-pilau" data-name="Vegetable Pilau" data-price="8000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+             <!-- Food 3 -->
+
+            <article class="food-card" data-category="break">
+
+                <div class="food-image">
+                    <img src="images/coffee.jpg"
+                         alt="Vegetable pilau">
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Coffee & Bread</h3>
+
+                        <p>
+                            Aromatic pilau prepared with
+                            fresh vegetables and spices.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 8,000
+                        </strong>
+
+                        <button class="add-food" data-id="coffee-bread" data-name="Coffee & Bread" data-price="8000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+             <!-- Food 4 -->
+
+            <article class="food-card" data-category="break">
+
+                <div class="food-image">
+                    <img src="images/millet.jpg"
+                         alt="Vegetable pilau">
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Millet porridge & Chapati</h3>
+
+                        <p>
+                            Aromatic pilau prepared with
+                            fresh vegetables and spices.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 8,000
+                        </strong>
+
+                        <button class="add-food" data-id="Millet-porridge-chapati" data-name="Millet porridge & Chapati" data-price="8000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+             <!-- Food 5 -->
+
+            <article class="food-card" data-category="break">
+
+                <div class="food-image">
+                    <img src="images/pilau.jpg"
+                         alt="Vegetable pilau">
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Vegetable Pilau</h3>
+
+                        <p>
+                            Aromatic pilau prepared with
+                            fresh vegetables and spices.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 8,000
+                        </strong>
+
+                        <button class="add-food" data-id="vegetable-pilau" data-name="Vegetable Pilau" data-price="8000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+ <!-- Food 6 -->
+
+            <article class="food-card" data-category="snacks">
+
+                <div class="food-image">
+                    <img src="images/cookies.jpg"
+                         alt="Butter cookies">
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Butter Cookies</h3>
+
+                        <p>
+                            Crisp, buttery cookies — a light
+                            snack to enjoy with tea or coffee.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 2,500
+                        </strong>
+
+                        <button class="add-food" data-id="butter-cookies" data-name="Butter Cookies" data-price="2500">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Food 7 -->
+
+            <article class="food-card" data-category="meals">
+
+                <div class="food-image">
+
+                    <img src="images/matoke.jpg"
+                         alt="Beef stew">
+
+                    <span class="food-tag">Chef's Choice</span>
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+
+                        <h3>Matoke & G. Nunts</h3>
+
+                        <p>
+                            Rich and tasty beef stew served
+                            with your favourite side.
+                        </p>
+
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 10,000
+                        </strong>
+
+                        <button class="add-food" data-id="beef-stew" data-name="Matoke & G. Nunts" data-price="10000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Food 8 -->
+
+            <article class="food-card" data-category="drinks">
+
+                <div class="food-image">
+
+                    <img src="images/juice.jpg"
+                         alt="Fresh juice">
+
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+
+                        <h3>Fresh Fruit Juice</h3>
+
+                        <p>
+                            Refreshing fruit juice prepared
+                            from fresh seasonal fruits.
+                        </p>
+
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 4,000
+                        </strong>
+
+                        <button class="add-food" data-id="fresh-juice" data-name="Fresh Fruit Juice" data-price="4000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Food 9 -->
+
+            <article class="food-card" data-category="snacks">
+
+                <div class="food-image">
+
+                    <img src="images/cream.jpeg"
+                         alt="Ice Cream">
+
+                    <span class="food-tag">Student Favourite</span>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Ice Cream</h3>
+
+                        <p>
+                           Creamy, chilled ice cream — a
+                           sweet treat to finish your meal.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>UGX 2,000
+                        </strong>
+
+                        <button class="add-food" data-id="ice-cream" data-name="Ice Cream" data-price="2000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            
+            <!-- Food 10 -->
+
+            <article class="food-card" data-category="drinks">
+
+                <div class="food-image">
+
+                    <img src="images/soda.jpg"
+                         alt="Soft Drinks">
+
+                    <span class="food-tag">Student Favourite</span>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Soft Drinks</h3>
+
+                        <p>
+                           Chilled, fizzy beverages that offer
+                           a refreshing burst of flavor.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>UGX 2,000
+                        </strong>
+
+                        <button class="add-food" data-id="soft-drinks" data-name="Soft Drinks" data-price="2000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Food 11 -->
+
+            <article class="food-card" data-category="drinks">
+                 
+                <div class="food-image">
+
+                    <img src="images/water.jpg"
+                         alt="Fresh juice">
+
+
+                    <i class="fa-solid fa-bottle-water"></i>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Mineral Water</h3>
+
+                        <p>
+                            Chilled bottled water, always
+                            on hand to keep you refreshed.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 1,500
+                        </strong>
+
+                        <button class="add-food" data-id="mineral-water" data-name="Mineral Water" data-price="1500">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Food 12 -->
+
+            <article class="food-card" data-category="snacks">
+
+                <div class="food-image">
+
+                    <img src="images/rolex.jpg"
+                         alt="Rolex">
+
+                    <span class="food-tag">Student Favourite</span>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Rolex</h3>
+
+                        <p>
+                            Egg and vegetable omelette rolled
+                            in a soft, freshly made chapati.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 3,000
+                        </strong>
+
+                        <button class="add-food" data-id="rolex" data-name="Rolex" data-price="3000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            
+            <!-- Food 13 -->
+
+            <article class="food-card" data-category="snacks">
+
+                <div class="food-image">
+
+                    <img src="images/donuts.jpg"
+                         alt="Soft Sugar Donuts">
+
+                    <span class="food-tag">Student Favourite</span>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Soft Sugar Donuts</h3>
+
+                        <p>
+                            Soft, lightly sugared donuts,
+                            freshly fried and fluffy inside.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>UGX 5,000
+                        </strong>
+
+                        <button class="add-food" data-id="sugar-donuts" data-name="Soft Sugar Donuts" data-price="5000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- Food 14 -->
+
+            <article class="food-card" data-category="snacks">
+
+             <div class="food-image">
+
+                    <img src="images/samo.jpg"
+                         alt="Samosa">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Beef Samosa</h3>
+
+                        <p>
+                            Crispy pastry filled with
+                            lightly spiced minced beef.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 1,500
+                        </strong>
+
+                        <button class="add-food" data-id="beef-samosa" data-name="Beef Samosa" data-price="1500">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Food 15 -->
+
+            <article class="food-card" data-category="meals">
+
+             <div class="food-image">
+
+                    <img src="images/posh.jpg"
+                         alt="Posh">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Beans & Posho</h3>
+
+                        <p>
+                            A hearty campus classic — soft
+                            posho served with rich bean stew.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 5,000
+                        </strong>
+
+                        <button class="add-food" data-id="beans-posho" data-name="Beans & Posho" data-price="5000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        
+           <!-- Food 16 -->
+
+            <article class="food-card" data-category="snacks">
+
+                <div class="food-image">
+
+                    <img src="images/kikomando.jpg"
+                         alt="Kikomando">
+
+                    <span class="food-tag">Student Favourite</span>
+                </div>
+
+                <div class="food-content">
+
+                    <div>
+                        <h3>Kikomando</h3>
+
+                        <p>
+                            Sliced chapatis mixed with fried beans.
+                        </p>
+                    </div>
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            UGX 3,000
+                        </strong>
+
+                        <button class="add-food" data-id="kikomando" data-name="Kikomando" data-price="3000">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        
+            <div>
+
+         </div>
+
+
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-section section-padding">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <span class="section-label">
+                <i class="fa-solid fa-sparkles"></i>
+                WHY STUDENTS LOVE US
+            </span>
+
+            <h2>
+                More than just
+                <span>a restaurant.</span>
+            </h2>
+
+            <p>
+                We make campus dining easier, faster and more enjoyable.
+            </p>
+
+        </div>
+
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <h3>Save Time</h3>
+
+                <p>
+                    Order before you arrive and spend
+                    less time standing in queues.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <h3>Student Prices</h3>
+
+                <p>
+                    Enjoy delicious meals at prices
+                    designed with campus life in mind.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <h3>Made With Care</h3>
+
+                <p>
+                    Our meals are prepared with attention
+                    to freshness, quality and taste.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <h3>Campus Community</h3>
+
+                <p>
+                    A welcoming space for students,
+                    staff and visitors to connect.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SOCIAL EVENTS CTA ================= -->
+
+<section class="event-banner">
+
+    <div class="container event-banner-content">
+
+        <div>
+
+            <h2>
+                Planning something
+                <span>special?</span>
+            </h2>
+
+            <p>
+                From birthdays and conferences to graduation
+                celebrations and handover parties, let KU
+                Restaurant help make your event memorable.
+            </p>
+
+        </div>
+
+        <a href="social-events.html" class="btn btn-light">
+            Explore Social Events
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ORDER CTA ================= -->
+
+<section class="order-section" id="order">
+
+    <div class="container order-card">
+
+        <div>
+
+            <h2>
+                Your meal is only
+                a few clicks away.
+            </h2>
+
+            <p>
+                Choose your meal, place your order and
+                collect it when it is ready.
+            </p>
+
+        </div>
+
+        <button type="button" id="startOrderBtn" class="btn btn-primary">
+            Start My Order
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer" id="contact">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="brand footer-logo">
+
+                <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+
+                <span>
+                    <strong>KU</strong> Restaurant
+                    <small>Campus Dining</small>
+                </span>
+
+            </a>
+
+            <p>
+                Fresh food, friendly service and
+                better campus dining experiences.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" data-whatsapp aria-label="Chat with us on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="social-events.html">Social Events</a>
+            <a href="menu.html">Menu</a>
+            <a href="order-confirmation.html">My Order</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <a href="menu.html">Restaurant Menu</a>
+            <a href="menu.html#order">Online Ordering</a>
+            <a href="social-events.html">Event Catering</a>
+            <a href="contact.html">Get in Touch</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Kampala University Campus
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +256 700 000 000
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@kurestaurant.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Mon - Sat: 7:00 AM - 9:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 KU Restaurant.
+                All rights reserved.
+            </p>
+
+            <p>
+                Made for the KU Campus Community.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="social-events.js?v=3"></script>
+
+<script src="site-config.js?v=3"></script>
+
+<script src="cart.js?v=3"></script>
+<script src="menu.js?v=3"></script>
+
+</body>
+</html>

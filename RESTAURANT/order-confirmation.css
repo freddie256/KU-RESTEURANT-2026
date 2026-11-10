@@ -1,0 +1,1 @@
+body{background:var(--cream)} .site-header .header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:15px} .site-header{position:relative;} @media(max-width:600px){.site-header .btn{font-size:.75rem;padding:10px 12px}.site-header .brand small{display:none}}

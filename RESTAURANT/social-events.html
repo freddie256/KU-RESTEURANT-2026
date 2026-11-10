@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Social Events | KU Restaurant</title>
+
+    <meta name="description"
+          content="Plan your birthday, conference, handover party, graduation, meeting or other campus event with KU Restaurant catering and space.">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css?v=3">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+
+            <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+
+            <span>
+                <strong>KU</strong> Restaurant
+                
+            </span>
+
+        </a>
+
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="main-nav" id="mainNav">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                About Us
+            </a>
+
+            <a href="gallery.html">
+                <i class="fa-solid fa-images"></i>
+                Gallery
+            </a>
+
+            <div class="nav-dropdown">
+
+                <div class="nav-dropdown-row">
+
+                    <a href="social-events.html" class="active nav-dropdown-toggle">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Social Events
+                    </a>
+
+                    <button type="button"
+                            class="dropdown-caret"
+                            aria-label="Toggle Social Events submenu"
+                            aria-expanded="false">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                </div>
+
+                <div class="dropdown-menu">
+
+                    <a href="social-events.html#birthday">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        Birthday
+                    </a>
+
+                    <a href="social-events.html#conference">
+                        <i class="fa-solid fa-users"></i>
+                        Conference
+                    </a>
+
+                    <a href="social-events.html#handover">
+                        <i class="fa-solid fa-handshake"></i>
+                        Handover Party
+                    </a>
+
+                    <a href="social-events.html#graduation">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Graduation
+                    </a>
+
+                    <a href="social-events.html#meeting">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Meeting
+                    </a>
+
+                    <a href="social-events.html#other">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Other Events
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="menu.html">
+                <i class="fa-solid fa-bowl-food"></i>
+                Menu
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+            <a href="menu.html#order"
+               class="nav-order">
+
+                Order Now
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="inner-hero">
+
+    <div class="container">
+
+        <span class="hero-badge">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            SOCIAL EVENTS
+        </span>
+
+        <h1>
+            Celebrate your
+            <span>special moments</span>
+            with us.
+        </h1>
+
+        <p>
+            KU Restaurant provides delicious food and simple catering
+            support for events held around campus. Choose your event
+            type below to see what's included, then request your booking.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EVENT HUB ================= -->
+
+<section class="events-hub section-padding">
+
+    <div class="container">
+
+        <!-- ============ EVENT GRID (default view) ============ -->
+
+        <div class="se-grid-wrap" id="seGridWrap">
+
+            <div class="center-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    CHOOSE YOUR EVENT
+                </span>
+
+                <h2>
+                    What are we
+                    <span>celebrating?</span>
+                </h2>
+
+                <p>
+                    Tap an event to view sample packages, pricing
+                    guidance and what our team takes care of for you.
+                </p>
+
+            </div>
+
+
+            <div class="se-quick-select" id="seQuickSelect">
+
+                <button type="button"
+                        class="se-select-toggle"
+                        id="seSelectToggle"
+                        aria-expanded="false">
+
+                    <span>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Choose an event
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="se-select-menu" id="seSelectMenu">
+
+                    <button type="button" class="se-select-item" data-event="birthday">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        Birthday
+                    </button>
+
+                    <button type="button" class="se-select-item" data-event="conference">
+                        <i class="fa-solid fa-users"></i>
+                        Conference
+                    </button>
+
+                    <button type="button" class="se-select-item" data-event="handover">
+                        <i class="fa-solid fa-handshake"></i>
+                        Handover Party
+                    </button>
+
+                    <button type="button" class="se-select-item" data-event="graduation">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Graduation
+                    </button>
+
+                    <button type="button" class="se-select-item" data-event="meeting">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Meeting
+                    </button>
+
+                    <button type="button" class="se-select-item" data-event="other">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Other Events
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="se-grid">
+
+                <button type="button" class="se-card" data-event="birthday">
+                    <span class="se-card-icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </span>
+                    <h3>Birthday</h3>
+                    <p>Great food, friends and a table set for celebrating.</p>
+                    <span class="se-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </button>
+
+                <button type="button" class="se-card" data-event="conference">
+                    <span class="se-card-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <h3>Conference</h3>
+                    <p>Catering support for meetings and conferences.</p>
+                    <span class="se-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </button>
+
+                <button type="button" class="se-card" data-event="handover">
+                    <span class="se-card-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </span>
+                    <h3>Handover Party</h3>
+                    <p>Celebrate achievements and new beginnings together.</p>
+                    <span class="se-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </button>
+
+                <button type="button" class="se-card" data-event="graduation">
+                    <span class="se-card-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+                    <h3>Graduation</h3>
+                    <p>Celebrate your academic achievement in style.</p>
+                    <span class="se-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </button>
+
+                <button type="button" class="se-card" data-event="meeting">
+                    <span class="se-card-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    <h3>Meeting</h3>
+                    <p>Simple catering options for meetings and discussions.</p>
+                    <span class="se-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </button>
+
+                <button type="button" class="se-card" data-event="other">
+                    <span class="se-card-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </span>
+                    <h3>Other Events</h3>
+                    <p>Have another occasion? Tell us what you need.</p>
+                    <span class="se-card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============ HIDDEN EVENT PANELS ============ -->
+
+        <div class="se-panels" id="sePanels">
+
+            <button type="button" class="back-to-events" id="backToEvents">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to all events
+            </button>
+
+
+            <!-- BIRTHDAY -->
+
+            <article class="se-panel" data-panel="birthday">
+
+                <div class="se-panel-hero">
+
+                    <span class="se-panel-icon-badge">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </span>
+
+                    <span class="eyebrow">BIRTHDAY</span>
+
+                    <h2>Make the day <span>unforgettable.</span></h2>
+
+                    <p class="se-panel-hero-desc">
+                        From small hall get-togethers to full class celebrations,
+                    we set up a bright, comfortable space and handle the food
+                    so you can enjoy the day with your friends.
+                    </p>
+
+                    <div class="se-pill-row">
+
+                        <button type="button" class="se-pill" data-info="A dedicated table with a decorated cake stand, candles and the first-cut set-up ready for your countdown.">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            Cake Table
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A small speaker set-up and playlist corner to keep the party energy going all afternoon.">
+                            <i class="fa-solid fa-music"></i>
+                            Music Corner
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Balloons, table runners and a bright colour scheme to make the space feel festive.">
+                            <i class="fa-solid fa-palette"></i>
+                            Colourful Decor
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A simple backdrop and props corner so you can capture the moment together.">
+                            <i class="fa-solid fa-camera"></i>
+                            Photo Corner
+                        </button>
+
+                    </div>
+
+                    <p class="se-pill-info" id="pillInfo-birthday">
+                        Tap a highlight above to see what it includes.
+                    </p>
+
+                </div>
+
+                <div class="se-panel-body">
+
+                <div class="se-meta-row">
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <strong>Best for</strong>
+                            <span>10 - 80 guests</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Starting from</strong>
+                            <span>UGX 15,000 / guest</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Notice needed</strong>
+                            <span>At least 2 days</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="se-included">
+
+                    <h4>What's included</h4>
+
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Decorated cake table & seating area</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Choice of meal & drinks package</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Music corner set-up</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Dedicated serving staff</li>
+                    </ul>
+
+                </div>
+
+                <div class="se-actions">
+                    <a href="event-booking.html?event=Birthday" class="btn btn-primary">
+                        Request This Event
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-light">
+                        View Menu
+                    </a>
+                </div>
+
+            </div>
+
+            </article>
+
+
+            <!-- CONFERENCE -->
+
+            <article class="se-panel" data-panel="conference">
+
+                <div class="se-panel-hero">
+
+                    <span class="se-panel-icon-badge">
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+
+                    <span class="eyebrow">CONFERENCE</span>
+
+                    <h2>Keep your guests <span>fed and focused.</span></h2>
+
+                    <p class="se-panel-hero-desc">
+                        Working sessions run better with good food. We provide
+                    tea breaks, working lunches and quiet, efficient service
+                    that keeps your programme on schedule.
+                    </p>
+
+                    <div class="se-pill-row">
+
+                        <button type="button" class="se-pill" data-info="Two scheduled tea breaks with coffee, tea, water and light bites between sessions.">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            Tea Breaks
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A self-serve buffet lunch so delegates can eat quickly and get back to the programme.">
+                            <i class="fa-solid fa-utensils"></i>
+                            Buffet Lunch
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Our team serves and clears discreetly so it never interrupts your speakers.">
+                            <i class="fa-solid fa-volume-low"></i>
+                            Quiet Service
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Food is ready and set up before your session starts, so there's no waiting around.">
+                            <i class="fa-solid fa-clock"></i>
+                            On-Time Setup
+                        </button>
+
+                    </div>
+
+                    <p class="se-pill-info" id="pillInfo-conference">
+                        Tap a highlight above to see what it includes.
+                    </p>
+
+                </div>
+
+                <div class="se-panel-body">
+
+                <div class="se-meta-row">
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <strong>Best for</strong>
+                            <span>15 - 150 guests</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Starting from</strong>
+                            <span>UGX 18,000 / guest</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Notice needed</strong>
+                            <span>At least 3 days</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="se-included">
+
+                    <h4>What's included</h4>
+
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Morning & afternoon tea breaks</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Buffet-style working lunch</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Water and refreshments on standby</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Quiet, professional service</li>
+                    </ul>
+
+                </div>
+
+                <div class="se-actions">
+                    <a href="event-booking.html?event=Conference" class="btn btn-primary">
+                        Request This Event
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-light">
+                        View Menu
+                    </a>
+                </div>
+
+            </div>
+
+            </article>
+
+
+            <!-- HANDOVER PARTY -->
+
+            <article class="se-panel" data-panel="handover">
+
+                <div class="se-panel-hero">
+
+                    <span class="se-panel-icon-badge">
+                        <i class="fa-solid fa-handshake"></i>
+                    </span>
+
+                    <span class="eyebrow">HANDOVER PARTY</span>
+
+                    <h2>Honour the moment, <span>together.</span></h2>
+
+                    <p class="se-panel-hero-desc">
+                        Whether it's a leadership handover or a team send-off,
+                    we help you mark the transition with good food, a group
+                    photo corner and a warm, celebratory atmosphere.
+                    </p>
+
+                    <div class="se-pill-row">
+
+                        <button type="button" class="se-pill" data-info="Simple themed touches that mark the occasion without feeling over the top.">
+                            <i class="fa-solid fa-handshake"></i>
+                            Send-off Theme
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A group photo spot so the outgoing and incoming team can capture the handover.">
+                            <i class="fa-solid fa-camera"></i>
+                            Photo Corner
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Easy-to-eat bites guests can enjoy while mingling and taking photos.">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                            Finger Foods
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Glasses and a small toast set-up, ready when it's time for the speeches.">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            Toast Ready
+                        </button>
+
+                    </div>
+
+                    <p class="se-pill-info" id="pillInfo-handover">
+                        Tap a highlight above to see what it includes.
+                    </p>
+
+                </div>
+
+                <div class="se-panel-body">
+
+                <div class="se-meta-row">
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <strong>Best for</strong>
+                            <span>15 - 100 guests</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Starting from</strong>
+                            <span>UGX 16,000 / guest</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Notice needed</strong>
+                            <span>At least 2 days</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="se-included">
+
+                    <h4>What's included</h4>
+
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Finger foods & buffet options</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Group photo corner set-up</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Refreshments for guests</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Dedicated serving staff</li>
+                    </ul>
+
+                </div>
+
+                <div class="se-actions">
+                    <a href="event-booking.html?event=Handover Party" class="btn btn-primary">
+                        Request This Event
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-light">
+                        View Menu
+                    </a>
+                </div>
+
+            </div>
+
+            </article>
+
+
+            <!-- GRADUATION -->
+
+            <article class="se-panel" data-panel="graduation">
+
+                <div class="se-panel-hero">
+
+                    <span class="se-panel-icon-badge">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+
+                    <span class="eyebrow">GRADUATION</span>
+
+                    <h2>Celebrate the <span>achievement.</span></h2>
+
+                    <p class="se-panel-hero-desc">
+                        Mark your graduation with family and friends over a
+                    proper meal. We set up a comfortable dining area sized
+                    for your group and take care of the serving.
+                    </p>
+
+                    <div class="se-pill-row">
+
+                        <button type="button" class="se-pill" data-info="Tables arranged so families can sit and eat together comfortably.">
+                            <i class="fa-solid fa-people-roof"></i>
+                            Family Seating
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A cake on request to help mark the achievement with your loved ones.">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            Celebration Cake
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A clean, well-lit table arrangement that photographs beautifully.">
+                            <i class="fa-solid fa-camera"></i>
+                            Photo-Friendly Set-up
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A complete meal and drinks package, not just light snacks.">
+                            <i class="fa-solid fa-utensils"></i>
+                            Full Meal
+                        </button>
+
+                    </div>
+
+                    <p class="se-pill-info" id="pillInfo-graduation">
+                        Tap a highlight above to see what it includes.
+                    </p>
+
+                </div>
+
+                <div class="se-panel-body">
+
+                <div class="se-meta-row">
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <strong>Best for</strong>
+                            <span>5 - 60 guests</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Starting from</strong>
+                            <span>UGX 17,000 / guest</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Notice needed</strong>
+                            <span>At least 2 days</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="se-included">
+
+                    <h4>What's included</h4>
+
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Family-style seating arrangement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Celebration cake on request</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Full meal & drinks package</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Photo-friendly table set-up</li>
+                    </ul>
+
+                </div>
+
+                <div class="se-actions">
+                    <a href="event-booking.html?event=Graduation" class="btn btn-primary">
+                        Request This Event
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-light">
+                        View Menu
+                    </a>
+                </div>
+
+            </div>
+
+            </article>
+
+
+            <!-- MEETING -->
+
+            <article class="se-panel" data-panel="meeting">
+
+                <div class="se-panel-hero">
+
+                    <span class="se-panel-icon-badge">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </span>
+
+                    <span class="eyebrow">MEETING</span>
+
+                    <h2>Simple, <span>no-fuss catering.</span></h2>
+
+                    <p class="se-panel-hero-desc">
+                        For smaller meetings and discussions, we offer a light,
+                    straightforward catering option — quick to arrange and
+                    served without disrupting your agenda.
+                    </p>
+
+                    <div class="se-pill-row">
+
+                        <button type="button" class="se-pill" data-info="Self-serve coffee, tea and water available throughout your meeting.">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            Coffee Station
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Can often be arranged the same day for last-minute meetings.">
+                            <i class="fa-solid fa-bolt"></i>
+                            Fast Turnaround
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="A calm space set aside so your discussions aren't disturbed.">
+                            <i class="fa-solid fa-volume-low"></i>
+                            Quiet Corner
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Simple snacks or a working lunch that won't slow down your agenda.">
+                            <i class="fa-solid fa-bowl-food"></i>
+                            Light Snacks
+                        </button>
+
+                    </div>
+
+                    <p class="se-pill-info" id="pillInfo-meeting">
+                        Tap a highlight above to see what it includes.
+                    </p>
+
+                </div>
+
+                <div class="se-panel-body">
+
+                <div class="se-meta-row">
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <strong>Best for</strong>
+                            <span>5 - 30 guests</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Starting from</strong>
+                            <span>UGX 8,000 / guest</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Notice needed</strong>
+                            <span>Same day possible</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="se-included">
+
+                    <h4>What's included</h4>
+
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Tea, coffee & water station</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Light snacks or working lunch</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Quiet corner set-up</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Quick turnaround</li>
+                    </ul>
+
+                </div>
+
+                <div class="se-actions">
+                    <a href="event-booking.html?event=Meeting" class="btn btn-primary">
+                        Request This Event
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-light">
+                        View Menu
+                    </a>
+                </div>
+
+            </div>
+
+            </article>
+
+
+            <!-- OTHER EVENTS -->
+
+            <article class="se-panel" data-panel="other">
+
+                <div class="se-panel-hero">
+
+                    <span class="se-panel-icon-badge">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </span>
+
+                    <span class="eyebrow">OTHER EVENTS</span>
+
+                    <h2>Something else <span>in mind?</span></h2>
+
+                    <p class="se-panel-hero-desc">
+                        Weddings, send-offs, club functions, social gatherings —
+                    if it happens on campus, we can probably cater it. Tell
+                    us what you're planning and we'll put together a package.
+                    </p>
+
+                    <div class="se-pill-row">
+
+                        <button type="button" class="se-pill" data-info="We build a menu around your event once we know what you're planning.">
+                            <i class="fa-solid fa-palette"></i>
+                            Custom Menu
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="From a handful of guests to a large gathering, we scale to fit.">
+                            <i class="fa-solid fa-users"></i>
+                            Flexible Size
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Serving staff can be added on if your event needs a helping hand.">
+                            <i class="fa-solid fa-user-tie"></i>
+                            Staff on Request
+                        </button>
+
+                        <button type="button" class="se-pill" data-info="Tell us your date and we'll confirm availability with you directly.">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            Any Date
+                        </button>
+
+                    </div>
+
+                    <p class="se-pill-info" id="pillInfo-other">
+                        Tap a highlight above to see what it includes.
+                    </p>
+
+                </div>
+
+                <div class="se-panel-body">
+
+                <div class="se-meta-row">
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <strong>Best for</strong>
+                            <span>Any group size</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-tag"></i>
+                        <div>
+                            <strong>Pricing</strong>
+                            <span>Based on your needs</span>
+                        </div>
+                    </div>
+
+                    <div class="se-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Notice needed</strong>
+                            <span>Tell us your date</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="se-included">
+
+                    <h4>What's included</h4>
+
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom menu planning</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Flexible guest numbers</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Serving staff on request</li>
+                        <li><i class="fa-solid fa-circle-check"></i> A quick chat with our team first</li>
+                    </ul>
+
+                </div>
+
+                <div class="se-actions">
+                    <a href="event-booking.html?event=Other Event" class="btn btn-primary">
+                        Request This Event
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-light">
+                        View Menu
+                    </a>
+                </div>
+
+            </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer" id="contact">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="brand footer-logo">
+
+                <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+
+                <span>
+                    <strong>KU</strong> Restaurant
+                    <small>Campus Dining</small>
+                </span>
+
+            </a>
+
+            <p>
+                Fresh food, friendly service and
+                better campus dining experiences.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" data-whatsapp aria-label="Chat with us on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="social-events.html">Social Events</a>
+            <a href="menu.html">Menu</a>
+            <a href="order-confirmation.html">My Order</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <a href="menu.html">Restaurant Menu</a>
+            <a href="menu.html#order">Online Ordering</a>
+            <a href="social-events.html">Event Catering</a>
+            <a href="contact.html">Get in Touch</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Kampala University Campus
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +256 700 000 000
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@kurestaurant.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Mon - Sat: 7:00 AM - 9:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 KU Restaurant.
+                All rights reserved.
+            </p>
+
+            <p>
+                Made for the KU Campus Community.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="social-events.js?v=3"></script>
+
+<script src="site-config.js?v=3"></script>
+
+<script src="cart.js?v=3"></script>
+
+</body>
+</html>

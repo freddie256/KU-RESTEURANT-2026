@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Confirmation | KU Restaurant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="order-confirmation.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+      <span><strong>KU</strong> Restaurant <small>Campus Dining</small></span>
+    </a>
+    <a href="menu.html" class="btn btn-primary"><i class="fa-solid fa-bowl-food"></i> Back to Menu</a>
+  </div>
+</header>
+
+<main class="order-confirm-page">
+  <div class="container">
+    <section class="order-confirm-card" id="orderConfirmCard">
+      <div class="confirm-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <span class="section-label">ORDER CONFIRMATION</span>
+      <h1>Your order is <span>ready.</span></h1>
+      <p>Make sure you pressed Send in WhatsApp. Quote your token when collecting your order.</p>
+
+      <div class="token-box">
+        <span>YOUR ORDER TOKEN</span>
+        <strong id="confirmToken">—</strong>
+      </div>
+
+      <div class="confirm-grid">
+        <div><i class="fa-solid fa-user"></i><span>Customer</span><strong id="confirmName">—</strong></div>
+        <div><i class="fa-solid fa-box"></i><span>Package</span><strong id="confirmPackage">—</strong></div>
+        <div><i class="fa-solid fa-utensils"></i><span>Order Type</span><strong id="confirmType">—</strong></div>
+        <div><i class="fa-solid fa-location-dot"></i><span>Location</span><strong id="confirmLocation">—</strong></div>
+        <div><i class="fa-solid fa-chair"></i><span>Table</span><strong id="confirmTable">—</strong></div>
+        <div><i class="fa-solid fa-money-bill-wave"></i><span>Total</span><strong id="confirmTotal">—</strong></div>
+      </div>
+
+      <div class="confirm-actions">
+        <a href="menu.html" class="btn btn-light"><i class="fa-solid fa-plus"></i> Make Another Order</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="site-config.js?v=3"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let data = {};
+  try { data = JSON.parse(localStorage.getItem("ku_last_order") || "{}"); } catch(e) {}
+
+  const money = n => "UGX " + Math.round(Number(n)||0).toLocaleString();
+
+  document.getElementById("confirmToken").textContent = data.token_number || "Not available";
+  document.getElementById("confirmName").textContent = data.customer_name || "—";
+  document.getElementById("confirmPackage").textContent = data.package_name || "—";
+  document.getElementById("confirmType").textContent = data.order_type || "—";
+  document.getElementById("confirmLocation").textContent = data.location || "—";
+  document.getElementById("confirmTable").textContent = data.table_number || "Not required";
+  document.getElementById("confirmTotal").textContent = money(data.total);
+
+  // WhatsApp and email are handled automatically by the server when the order is submitted.
+});
+</script>
+</body>
+</html>

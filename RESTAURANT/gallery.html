@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | KU Restaurant</title>
+
+    <meta name="description"
+          content="Explore the KU Restaurant gallery, meals, dining environment, events and campus moments.">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="style.css?v=3">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+
+            <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+
+            <span>
+                <strong>KU</strong> Restaurant
+                
+            </span>
+
+        </a>
+
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="main-nav" id="mainNav">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                About Us
+            </a>
+
+            <a href="gallery.html" class="active">
+                <i class="fa-solid fa-images"></i>
+                Gallery
+            </a>
+
+            <div class="nav-dropdown">
+
+                <div class="nav-dropdown-row">
+
+                    <a href="social-events.html" class="nav-dropdown-toggle">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Social Events
+                    </a>
+
+                    <button type="button"
+                            class="dropdown-caret"
+                            aria-label="Toggle Social Events submenu"
+                            aria-expanded="false">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                </div>
+
+                <div class="dropdown-menu">
+
+                    <a href="social-events.html#birthday">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        Birthday
+                    </a>
+
+                    <a href="social-events.html#conference">
+                        <i class="fa-solid fa-users"></i>
+                        Conference
+                    </a>
+
+                    <a href="social-events.html#handover">
+                        <i class="fa-solid fa-handshake"></i>
+                        Handover Party
+                    </a>
+
+                    <a href="social-events.html#graduation">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Graduation
+                    </a>
+
+                    <a href="social-events.html#meeting">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Meeting
+                    </a>
+
+                    <a href="social-events.html#other">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Other Events
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="menu.html">
+                <i class="fa-solid fa-bowl-food"></i>
+                Menu
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+            <a href="menu.html#order"
+               class="nav-order">
+
+                Order Now
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- PAGE HERO -->
+
+<section class="inner-hero gallery-hero">
+
+    <div class="container">
+
+        <span class="hero-badge">
+            <i class="fa-solid fa-camera"></i>
+            KU RESTAURANT GALLERY
+        </span>
+
+        <h1>
+            Taste the moment.
+            <span>See the experience.</span>
+        </h1>
+
+        <p>
+            Take a look at our meals, restaurant atmosphere,
+            campus events and the people who make KU Restaurant special.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <span class="section-label">
+                <i class="fa-solid fa-images"></i>
+                OUR GALLERY
+            </span>
+
+            <h2>
+                A glimpse of
+                <span>KU Restaurant.</span>
+            </h2>
+
+            <p>
+                Food, people, events and memorable campus moments.
+            </p>
+
+        </div>
+
+
+        <!-- Gallery Filters -->
+
+        <div class="gallery-filters">
+
+            <button class="gallery-filter active"
+                    data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="gallery-filter"
+                    data-filter="food">
+
+                Food
+
+            </button>
+
+            <button class="gallery-filter"
+                    data-filter="restaurant">
+
+                Restaurant
+
+            </button>
+
+            <button class="gallery-filter"
+                    data-filter="events">
+
+                Events
+
+            </button>
+
+            <button class="gallery-filter"
+                    data-filter="campus">
+
+                Campus
+
+            </button>
+
+        </div>
+
+
+        <!-- Gallery Grid -->
+
+        <div class="gallery-grid">
+
+
+            <article class="gallery-item large"
+                     data-category="food">
+
+                <img src="images/fish.jpg"
+                     alt="Chicken and rice meal">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>FOOD</span>
+
+                        <h3>Fresh Campus Meals</h3>
+
+                    </div>
+
+                    <button class="gallery-view"
+                            aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item"
+                     data-category="food">
+
+                <img src="images/pilau.jpg"
+                     alt="Vegetable pilau">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>FOOD</span>
+
+                        <h3>Vegetable Pilau</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item"
+                     data-category="restaurant">
+
+                <img src="images/jinja.jpeg"
+                     alt="KU Restaurant dining area">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>RESTAURANT</span>
+
+                        <h3>Our Dining Space</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item"
+                     data-category="food">
+
+                <img src="images/matoke.jpg"
+                     alt="Beef stew">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>FOOD</span>
+
+                        <h3>Chef's Special</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item"
+                     data-category="campus">
+
+                <img src="images/fresh.jpeg"
+                     alt="Fresh fruit juice">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>CAMPUS</span>
+
+                        <h3>Fresh & Refreshing</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item"
+                     data-category="events">
+
+                <img src="images/class.jpeg"
+                     alt="Restaurant event">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>EVENTS</span>
+
+                        <h3>Campus Celebrations</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item large"
+                     data-category="events">
+
+                <img src="images/events.jpeg"
+                     alt="Campus social event">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>EVENTS</span>
+
+                        <h3>Memorable Moments</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-item"
+                     data-category="restaurant">
+
+                <img src="images/wichs.jpeg"
+                     alt="Restaurant atmosphere">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>RESTAURANT</span>
+
+                        <h3>Campus Dining</h3>
+
+                    </div>
+
+                    <button class="gallery-view">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY CTA -->
+
+<section class="gallery-cta">
+
+    <div class="container">
+
+        <i class="fa-solid fa-camera-retro"></i>
+
+        <h2>
+            Have an event
+            <span>with us.</span>
+        </h2>
+
+        <p>
+            Birthdays, conferences, graduation parties,
+            handovers and more.
+        </p>
+
+        <a href="social-events.html"
+           class="btn btn-light">
+
+            Explore Social Events
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- IMAGE LIGHTBOX -->
+
+<div class="lightbox"
+     id="lightbox"
+     aria-hidden="true">
+
+    <button class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <img id="lightboxImage"
+         src=""
+         alt="Gallery preview">
+
+</div>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html"
+               class="brand footer-logo">
+
+                <span class="brand-icon"><img src="images/ku-logo.png" alt="Kampala University logo" class="brand-logo"></span>
+
+                <span>
+                    <strong>KU</strong> Restaurant
+                    <small>Campus Dining</small>
+                </span>
+
+            </a>
+
+            <p>
+                Fresh food, friendly service and
+                better campus dining experiences.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" data-whatsapp aria-label="Chat with us on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="social-events.html">Social Events</a>
+            <a href="menu.html">Menu</a>
+            <a href="order-confirmation.html">My Order</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <a href="menu.html">Menu</a>
+            <a href="menu.html#order">Online Ordering</a>
+            <a href="social-events.html">Event Catering</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Kampala University Campus
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +256 700 000 000
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@kurestaurant.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 KU Restaurant.
+                All rights reserved.
+            </p>
+
+            <p>
+                Campus Dining • Fresh • Fast • Affordable
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="social-events.js?v=3"></script>
+
+<script src="site-config.js?v=3"></script>
+
+<script src="cart.js?v=3"></script>
+<script src="gallery.js?v=3"></script>
+
+
+</body>
+</html>
